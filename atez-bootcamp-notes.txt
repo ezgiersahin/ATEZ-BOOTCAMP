@@ -1,0 +1,20 @@
+Scope
+Scope uygulamamızda ki değişkenlerin ve fonksiyonların nerelerde erişilebilir, nerelerde erişilemez olduklarını belirler.
+
+Global Scope
+Global Scope özellikli değişkenler, fonksiyon içerisinden de erişilebilir durumdadırlar.
+Program içerisinde fonksiyonların dışında tanımlanan ve her yerden erişilebilen scope tipidir.
+
+Local Scope
+Değişken bir fonksiyon içerisinde tanımlanmışsa bunun kapsamına Local Scope adı verilir. 
+Tanımlanan değişken de bir local değişkendir.
+Fonksiyon dışında local değişken erişilebilir olmadığından için konsolda ReferenceError hatası alındı.
+
+var kullanırsanız function scope, let ya da const kullanırsanız block scope tabanlı oluyor.
+
+Block scope: Süslü parantezler { } arasında tanımlı olan scopedur. Bu bir if bloğu, for, while ya da herhangi bir keyword kullanmadan { } da olabilir.
+
+“var” function scope tabanlıdır. Tanımlı olduğu fonksiyon onun erişilebilirlik kapsamıdır.
+“let” ve “const” block scope tabanlıdır. Ona en yakın süslü parantezler { } arasında erişilebilirdir.
+Function scope bulunduğu fonksiyon içerisinde geçerlidir.
+Block scope bulunduğu süslü parantezler(brackets) { } içerisinde geçerlidir.
